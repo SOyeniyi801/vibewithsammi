@@ -15,8 +15,8 @@ import '../styles/GalleryGrid.css'
  */
 
 // Eagerly import all images/videos so we can resolve by filename string
-const imageModules = import.meta.glob('../assets/images/*', { eager: true, import: 'default' })
-const videoModules = import.meta.glob('../assets/videos/*', { eager: true, import: 'default' })
+const imageModules = import.meta.glob('../assets/images/**/*', { eager: true, import: 'default' })
+const videoModules = import.meta.glob('../assets/videos/**/*', { eager: true, import: 'default' })
 
 function resolveSrc(filename, type) {
   const modules = type === 'video' ? videoModules : imageModules

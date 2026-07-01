@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import events from '../data/events'
 import '../styles/Caught.css'
 
-const imageModules = import.meta.glob('../assets/images/*', { eager: true, import: 'default' })
+const imageModules = import.meta.glob('../assets/images/**/*', { eager: true, import: 'default' })
 function resolveImg(filename) {
   const match = Object.entries(imageModules).find(([path]) => path.endsWith('/' + filename))
   return match ? match[1] : null

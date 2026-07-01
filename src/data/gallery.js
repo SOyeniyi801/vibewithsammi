@@ -47,7 +47,7 @@ const gallery = [
   {
     id: 'g5',
     type: 'image',
-    shape: 'portrait',
+    shape: 'landscape',
     src: 'gallery-5.jpg',
     caption: '',
     event: '',
@@ -100,7 +100,7 @@ const gallery = [
     src: 'recap-2.mp4',
     poster: 'gallery-11-poster.jpg',
     caption: 'Event recap',
-    event: 'Tennis on the Block',
+    event: 'Chef Showdown - Chef Hope Recap',
   },
   {
     id: 'g12',

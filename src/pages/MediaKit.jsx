@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import '../styles/MediaKit.css'
 
-const imageModules = import.meta.glob('../assets/images/*', { eager: true, import: 'default' })
+const imageModules = import.meta.glob('../assets/images/**/*', { eager: true, import: 'default' })
 const videoModules = import.meta.glob('../assets/videos/*', { eager: true, import: 'default' })
 function resolveImg(filename) {
   if (!filename) return null
@@ -178,7 +178,7 @@ export default function MediaKit() {
 
           <div className="mk-stats-grid">
             <div className="mk-stat">
-              <div className="mk-stat__num">701<span>+</span></div>
+              <div className="mk-stat__num">708<span>+</span></div>
               <div className="mk-stat__label">Instagram Followers</div>
               <div className="mk-stat__sub">18K+ views this month. Community over vanity.</div>
             </div>

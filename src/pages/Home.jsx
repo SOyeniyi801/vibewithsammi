@@ -11,6 +11,7 @@ import recentImg2 from '../assets/images/recent-2.jpg'
 import recentImg3 from '../assets/images/recent-3.jpg'
 import recentImg4 from '../assets/images/recent-4.jpg'
 import storyImg1  from '../assets/images/story-thumb.jpg'
+import aboutImg from '../assets/images/about-me.jpg'
 import storyImg2  from '../assets/images/story-thumb-2.jpg'
 
 export default function Home() {
@@ -71,7 +72,7 @@ export default function Home() {
         <div className="container about__inner">
 
           <div className="about__photo">
-            <img src={heroImg2} alt="Sammi Oyeniyi" loading="lazy" />
+            <img src={aboutImg} alt="Sammi Oyeniyi" loading="lazy" />
           </div>
 
           <div className="about__text">
@@ -194,16 +195,18 @@ export default function Home() {
               </div>
             </Link>
 
-            <div className="story-card story-card--muted">
-              <div className="story-card__thumb story-card__thumb--empty" />
-              <div className="story-card__body">
-                <p className="story-card__title">Tennis on the Block</p>
-                <p className="story-card__desc">
-                  Community tennis, great fits, and good energy on the Atlanta courts.
-                </p>
-                <span className="story-card__read">Coming soon</span>
+            <Link to="/publication/lakoufet" className="story-card">
+              <div className="story-card__thumb">
+                <img src={storyImg2} alt="Lakoufet World Cup Watch Party" loading="lazy" />
               </div>
-            </div>
+              <div className="story-card__body">
+                <p className="story-card__title">Atlanta Beltline Festival</p>
+                <p className="story-card__desc">
+                  A World Cup community festival welcoming the new south beltline path
+                </p>
+                <span className="story-card__read">Read story</span>
+              </div>
+            </Link>
           </div>
 
           {/* Community Spotlight callout */}
