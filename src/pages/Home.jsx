@@ -33,12 +33,12 @@ export default function Home() {
             </div>
             <div className="hero__right">
               <p className="hero__sub">
-                Sammi Oyeniyi — event and festival photographer, web designer,
+                Sammi Oyeniyi is an event and festival photographer, web designer,
                 and visual storyteller rooted in Atlanta's Caribbean, African, and
                 creative communities. Where culture shows up, the lens follows.
               </p>
               <div className="hero__actions">
-                <Link to="/services" className="btn btn-outline-dark">
+                <Link to="/work-with-me" className="btn btn-outline-dark">
                   Work With Me
                 </Link>
                 <Link to="/photography" className="btn btn-gold">

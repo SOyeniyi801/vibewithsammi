@@ -7,7 +7,7 @@ const links = [
   { label: 'About',           to: '/#about' },
   { label: 'Photography',     to: '/photography', dropdown: true },
   { label: 'Behind the Lens', to: '/publication' },
-  { label: 'Services',        to: '/services' },
+  { label: 'Work With Me',        to: '/work-with-me' },
   { label: 'Contact',         to: '/contact' },
 ]
 
@@ -171,10 +171,6 @@ export default function Navbar() {
             })}
           </ul>
 
-          {/* Book Me CTA */}
-          <Link to="/services" className="btn btn-gold navbar__cta">
-            Book Me
-          </Link>
 
           {/* Hamburger */}
           <button
@@ -242,9 +238,6 @@ export default function Navbar() {
         <div className="nav-drawer__meta">
           <p>Atlanta, GA</p>
           <a href="mailto:hello.vibewithsammi@gmail.com">hello.vibewithsammi@gmail.com</a>
-          <Link to="/services" className="btn btn-gold" style={{ marginTop: '24px', width: 'fit-content' }}>
-            Book Me
-          </Link>
         </div>
       </div>
 

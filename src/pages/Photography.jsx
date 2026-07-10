@@ -38,7 +38,7 @@ export default function Photography() {
             </h2>
           </div>
           <div className="photo-cta__actions">
-            <Link to="/services" className="btn btn-gold">Book Me</Link>
+            <Link to="/work-with-me" className="btn btn-gold">Book Me</Link>
             <Link to="/caught" className="btn btn-outline">Find Your Photos</Link>
           </div>
         </div>

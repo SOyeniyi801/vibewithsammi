@@ -110,6 +110,14 @@ const gallery = [
     caption: '',
     event: '',
   },
+  {
+    id: 'g13',
+    type: 'image',
+    shape: 'portrait',
+    src: 'gallery-13.jpg',
+    caption: '',
+    event: '',
+  }
 ]
 
 export default gallery

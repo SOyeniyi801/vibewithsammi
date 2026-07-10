@@ -11,7 +11,7 @@ import Publication from "./pages/Publication";
 import StoryPage from "./pages/StoryPage";
 import SpotlightArchive from "./pages/SpotlightArchive";
 import SpotlightDetail from "./pages/SpotlightDetail";
-import Services from "./pages/Services";
+import WorkWithMe from "./pages/Work-with-me";
 import Contact from "./pages/Contact";
 import MediaKit from "./pages/MediaKit";
 // import NotFound    from './pages/NotFound'
@@ -34,7 +34,7 @@ export default function App() {
             element={<SpotlightDetail />}
           />
           <Route path="/publication/:slug" element={<StoryPage />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/work-with-me" element={<WorkWithMe />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/media-kit" element={<MediaKit />} />
           {/* <Route path="*"                             element={<NotFound />} /> */}

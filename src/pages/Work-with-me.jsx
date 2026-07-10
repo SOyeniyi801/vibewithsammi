@@ -1,28 +1,38 @@
-import { Link } from 'react-router-dom'
-import '../styles/Services.css'
+import { Link } from "react-router-dom";
+import "../styles/Work-with-me.css";
 
-const imageModules = import.meta.glob('../assets/images/**/*', { eager: true, import: 'default' })
+const imageModules = import.meta.glob("../assets/images/**/*", {
+  eager: true,
+  import: "default",
+});
 function resolveImg(filename) {
-  const match = Object.entries(imageModules).find(([path]) => path.endsWith('/' + filename))
-  return match ? match[1] : null
+  const match = Object.entries(imageModules).find(([path]) =>
+    path.endsWith("/" + filename),
+  );
+  return match ? match[1] : null;
 }
 
 export default function Services() {
   return (
     <div className="services-page">
-
       {/* ══ HERO ════════════════════════════════════ */}
       <header className="svc-hero">
         <div className="svc-hero__bg">
-          <img src={resolveImg('services-hero.jpg')} alt="" loading="eager" />
+          <img src={resolveImg("wwm-hero.jpg")} alt="" loading="eager" />
         </div>
         <div className="svc-hero__overlay" />
         <div className="container svc-hero__content">
-          <span className="svc-hero__eyebrow">Sammi Shot That &middot; Atlanta, GA</span>
-          <h1>Work<br />With Me</h1>
+          <span className="svc-hero__eyebrow">
+            Sammi Shot That &middot; Atlanta, GA
+          </span>
+          <h1>
+            Work
+            <br />
+            With Me
+          </h1>
           <p>
-            Event and festival photography, social recap videos, and custom
-            web design. Let's make your event impossible to forget.
+            Event and festival photography, social recap videos, and custom web
+            design. Let's make your event impossible to forget.
           </p>
         </div>
       </header>
@@ -30,74 +40,87 @@ export default function Services() {
       {/* ══ WHY BOOK ME ═════════════════════════════ */}
       <section className="svc-section svc-section--dark">
         <div className="container">
-          <span className="section-label">Why Book Me</span>
+          <span className="section-label">Let's Work</span>
 
           <div className="svc-why__grid">
             <div className="svc-why__text">
-              <h2>You need someone who<br /><span className="accent">gets the room.</span></h2>
+              <h2>
+                Want me behind the
+                <br />
+                <span className="accent">camera at your next event?</span>
+              </h2>
               <p>
-                I don't show up with a checklist. I show up knowing the energy
-                of the space, the people in it, and the moments worth capturing
-                before they happen. That's what 8 events in a month teaches you.
-              </p>
-              <p>
-                My background in design means I think about how images land on
-                social, in press kits, and in marketing materials. You get
-                photos that work, not just photos that look good on a hard drive.
+                Photography bookings are handled through Floye Creative Co., my
+                creative agency. Explore my services or, if you already know
+                what you need, start with the client intake form.
               </p>
             </div>
-
-            <div className="svc-stats">
-              <div className="svc-stat">
-                <span className="svc-stat__num">8</span>
-                <div>
-                  <strong>Events shot this month</strong>
-                  <span>Festivals, community events, nightlife, cultural celebrations</span>
-                </div>
-              </div>
-              <div className="svc-stat">
-                <span className="svc-stat__num">200+</span>
-                <div>
-                  <strong>Professionally edited images delivered</strong>
-                  <span>High-res, gallery-ready, social-optimized</span>
-                </div>
-              </div>
-              <div className="svc-stat">
-                <span className="svc-stat__num">2</span>
-                <div>
-                  <strong>Official media passes</strong>
-                  <span>Lakoufet World Cup Watch Party &middot; Tennis on the Block, June 2026</span>
-                </div>
-              </div>
-              <div className="svc-stat">
-                <span className="svc-stat__num">900+</span>
-                <div>
-                  <strong>Website visits in 3 days</strong>
-                  <span>From business cards handed out at events</span>
-                </div>
-              </div>
-            </div>
+          </div>
+          <div className="svc__actions">
+            <a
+              href="https://floyecreative.co"
+              className="btn btn-gold"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Photography Services
+            </a>
+            <a
+              href="https://tally.so/r/eqPgro"
+              className="btn btn-outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Start a project
+            </a>
           </div>
 
           {/* Single row, 4 images */}
           <div className="svc-strip">
             <div className="svc-strip__item">
-              <img src={resolveImg('services-strip-1.jpg')} alt="Event coverage" loading="lazy" />
+              <img
+                src={resolveImg("wwm-strip-1.jpg")}
+                alt="Event coverage"
+                loading="lazy"
+              />
             </div>
             <div className="svc-strip__item">
-              <img src={resolveImg('services-strip-2.jpg')} alt="Event coverage" loading="lazy" />
+              <img
+                src={resolveImg("wwm-strip-2.jpg")}
+                alt="Event coverage"
+                loading="lazy"
+              />
             </div>
             <div className="svc-strip__item">
-              <img src={resolveImg('services-strip-3.jpg')} alt="Event coverage" loading="lazy" />
+              <img
+                src={resolveImg("wwm-strip-3.jpg")}
+                alt="Event coverage"
+                loading="lazy"
+              />
             </div>
             <div className="svc-strip__item">
-              <img src={resolveImg('services-strip-4.jpg')} alt="Event coverage" loading="lazy" />
+              <img
+                src={resolveImg("wwm-strip-4.jpg")}
+                alt="Event coverage"
+                loading="lazy"
+              />
             </div>
           </div>
 
-          <Link to="/photography" className="btn btn-outline svc-portfolio-link">
+          <Link
+            to="/photography"
+            className="btn btn-outline svc-portfolio-link"
+          >
             View Full Portfolio
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              aria-hidden="true"
+            >
               <path d="M7 17L17 7M17 7H7M17 7v10" />
             </svg>
           </Link>
@@ -105,7 +128,7 @@ export default function Services() {
       </section>
 
       {/* ══ PACKAGES & PRICING ══════════════════════ */}
-      <section className="svc-section svc-section--card">
+      {/* <section className="svc-section svc-section--card">
         <div className="container">
           <span className="section-label">Rates</span>
           <h2 className="svc-pricing-heading">Packages &amp;<br /><span className="accent">Pricing</span></h2>
@@ -160,10 +183,10 @@ export default function Services() {
               </ul>
             </div>
 
-          </div>
+          </div> */}
 
-          {/* Add-ons */}
-          <div className="svc-addons">
+      {/* Add-ons */}
+      {/* <div className="svc-addons">
             <h3>Add-Ons</h3>
             <div className="svc-addons__grid">
               <div className="svc-addon">
@@ -188,7 +211,7 @@ export default function Services() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ══ WEB DESIGN ══════════════════════════════ */}
       <section className="svc-section svc-section--dark">
@@ -197,12 +220,16 @@ export default function Services() {
 
           <div className="svc-web__grid">
             <div className="svc-web__text">
-              <h2>Need a site to<br /><span className="accent">match the vibe?</span></h2>
+              <h2>
+                Need a site to
+                <br />
+                <span className="accent">match the vibe?</span>
+              </h2>
               <p>
                 Beyond the camera, I'm also a web designer and developer.
-                Through <strong>Floye Creative Co.</strong> I build custom websites
-                for creatives, event organizers, and small businesses, fast,
-                mobile-first, and built to represent your brand properly.
+                Through <strong>Floye Creative Co.</strong> I build custom
+                websites for creatives, event organizers, and small businesses,
+                fast, mobile-first, and built to represent your brand properly.
               </p>
               <p>
                 Ask about package deals that combine event photography, recap
@@ -231,12 +258,20 @@ export default function Services() {
                 className="btn btn-outline svc-bundle-card__btn"
               >
                 View Web Design Work
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  aria-hidden="true"
+                >
                   <path d="M7 17L17 7M17 7H7M17 7v10" />
                 </svg>
               </a>
               <a
-                href="mailto:hello.vibewithsammi@gmail.com?subject=Bundle%20Package%20Inquiry"
+                href="mailto:sammi@floyecreative.co?subject=Bundle%20Package%20Inquiry"
                 className="btn btn-gold svc-bundle-card__btn"
               >
                 Ask About a Bundle
@@ -247,8 +282,12 @@ export default function Services() {
           {/* Quick callout pointing to Floye Creative directly */}
           <div className="svc-floye-callout">
             <p>
-              Looking for web design services?{' '}
-              <a href="https://www.floyecreative.co/" target="_blank" rel="noopener noreferrer">
+              Looking for web design services?{" "}
+              <a
+                href="https://www.floyecreative.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Check out Floye Creative Co.
               </a>
             </p>
@@ -257,23 +296,48 @@ export default function Services() {
       </section>
 
       {/* ══ CTA ═════════════════════════════════════ */}
-      <section className="svc-cta">
+      {/* <section className="svc-cta">
         <div className="container">
-          <span className="section-label" style={{ textAlign: 'center', display: 'block' }}>Let's Talk</span>
-          <h2>Ready to<br /><span className="accent">Book?</span></h2>
+          <span
+            className="section-label"
+            style={{ textAlign: "center", display: "block" }}
+          >
+            Let's Talk
+          </span>
+          <h2>
+            Ready to
+            <br />
+            <span className="accent">Book?</span>
+          </h2>
           <p>
-            Send me the details about your event, date, location, what you
-            need, and I'll get back to you within 24 hours.
+            Send me the details about your event, date, location, what you need,
+            and I'll get back to you within 24 hours.
           </p>
           <div className="svc-cta__buttons">
-            <a href="mailto:hello.vibewithsammi@gmail.com?subject=Event%20Photography%20Inquiry" className="btn btn-gold">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+            <a
+              href="mailto:hello.vibewithsammi@gmail.com?subject=Event%20Photography%20Inquiry"
+              className="btn btn-gold"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                aria-hidden="true"
+              >
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                 <polyline points="22,6 12,13 2,6" />
               </svg>
               hello.vibewithsammi@gmail.com
             </a>
-            <a href="https://instagram.com/vibewithsammi" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+            <a
+              href="https://instagram.com/vibewithsammi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline"
+            >
               DM on Instagram
             </a>
             <Link to="/media-kit" className="btn btn-outline">
@@ -281,8 +345,7 @@ export default function Services() {
             </Link>
           </div>
         </div>
-      </section>
-
+      </section> */}
     </div>
-  )
+  );
 }

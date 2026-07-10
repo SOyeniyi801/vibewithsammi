@@ -70,6 +70,13 @@
   line-height: 1.8;
 }
 
+.svc__actions{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
 /* ── SECTION BASE — alternating backgrounds ─── */
 .svc-section {
   padding: 72px 0;

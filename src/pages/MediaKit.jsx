@@ -250,7 +250,7 @@ export default function MediaKit() {
               </svg>
               hello.vibewithsammi@gmail.com
             </a>
-            <Link to="/services" className="btn btn-outline">
+            <Link to="/work-with-me" className="btn btn-outline">
               See Rates &amp; Packages
             </Link>
           </div>
