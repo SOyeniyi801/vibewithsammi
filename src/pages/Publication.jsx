@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import stories from '../data/stories'
 import '../styles/Publication.css'
 
-const imageModules = import.meta.glob('../assets/images/*', { eager: true, import: 'default' })
+const imageModules = import.meta.glob('../assets/images/**/*', { eager: true, import: 'default' })
 function resolveImg(filename) {
   const match = Object.entries(imageModules).find(([path]) => path.endsWith('/' + filename))
   return match ? match[1] : null
@@ -27,7 +27,7 @@ export default function Publication() {
       </header>
 
       {/* ══ COMMUNITY SPOTLIGHT — cutout callout ════ */}
-      <section className="spotlight-section">
+      {/* <section className="spotlight-section">
         <div className="container">
           <Link to="/publication/spotlight" className="spotlight-cutout">
             <div className="spotlight-cutout__fold" aria-hidden="true" />
@@ -62,7 +62,7 @@ export default function Publication() {
             </div>
           </Link>
         </div>
-      </section>
+      </section> */}
 
       {/* ══ STORIES GRID ════════════════════════════ */}
       <section className="stories-section">

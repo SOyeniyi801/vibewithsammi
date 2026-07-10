@@ -3,7 +3,7 @@ import { getStoryBySlug } from '../data/storiesContent'
 import StoryMarquee from '../components/StoryMarquee'
 import '../styles/StoryPage.css'
 
-const imageModules = import.meta.glob('../assets/images/*', { eager: true, import: 'default' })
+const imageModules = import.meta.glob('../assets/images/**/*', { eager: true, import: 'default' })
 function resolveImg(filename) {
   if (!filename) return null
   const match = Object.entries(imageModules).find(([path]) => path.endsWith('/' + filename))
@@ -34,26 +34,21 @@ function renderBlock(block, i) {
     case 'imagePairQuote':
       return (
         <div className="s-block-1" key={i}>
-          <StoryImage filename={block.image1} />
-          <div className="s-block-1-right">
-            <p className="s-quote">{block.quote}</p>
-            <div className="s-quote-divider" />
-            <p className="s-body-text">{block.paragraph}</p>
-          </div>
-          {block.image2 && (
-            <div className="s-block-1-img2">
-              <StoryImage filename={block.image2} />
-            </div>
-          )}
-        </div>
+      <StoryImage filename={block.image1} alt={block.image1Alt}/>
+      <div className="s-block-1-right">
+        <p className="s-quote">{block.quote}</p>
+        <div className="s-quote-divider" />
+        <p className="s-body-text">{block.paragraph}</p>
+      </div>
+    </div>
       )
 
     case 'imageDuo':
       return (
         <div className="s-block-2" key={i}>
           <div className="s-two-col">
-            <StoryImage filename={block.image1} />
-            <StoryImage filename={block.image2} />
+            <StoryImage filename={block.image1} alt={block.image1Alt}/>
+            <StoryImage filename={block.image2} alt={block.image2Alt}/>
           </div>
           {block.caption && <p className="s-caption">{block.caption}</p>}
         </div>
@@ -66,7 +61,7 @@ function renderBlock(block, i) {
             <p className="s-quote" style={{ fontSize: 'clamp(20px, 2.5vw, 28px)' }}>{block.quote}</p>
             <div className="s-quote-divider" />
           </div>
-          <StoryImage filename={block.image} />
+          <StoryImage filename={block.image} alt={block.imageAlt}/>
           <div>
             {block.paragraphs?.map((p, idx) => (
               <p className="s-body-text" key={idx} style={idx > 0 ? { marginTop: 16 } : undefined}>
@@ -80,7 +75,7 @@ function renderBlock(block, i) {
     case 'imageHighlight':
       return (
         <div className="s-block-4" key={i}>
-          <StoryImage filename={block.image} />
+          <StoryImage filename={block.image} alt={block.imageAlt}/>
           <div>
             <p className="s-highlight-heading">{block.highlight}</p>
             <div className="s-quote-divider" style={{ marginBottom: 20 }} />

@@ -23,7 +23,7 @@ const stories = [
     title: 'Lakoufet World Cup Watch Party',
     kicker: 'Behind the lens',
     intro: 'On a Wednesday afternoon in Atlanta, hundreds of Haitians gathered to celebrate more than soccer. Lakoufet\u2019s World Cup Watch Party became a celebration of culture, music, and one unforgettable triumph as Haiti made history in the World Cup.',
-    heroImage: 'story-lakoufet-hero.jpg',
+    heroImage: 'lakou-fet-001.jpg',
 
     photography: 'Sammi Oyeniyi',
     location: 'Atlanta, GA',
@@ -33,21 +33,24 @@ const stories = [
     blocks: [
       {
         type: 'imagePairQuote',
-        image1: 'story-lakoufet-1.jpg',
-        image2: 'story-lakoufet-2.jpg',
+        image1: 'lakou-fet-002.jpg',
+        image1Alt: 'women celebrating in a crowd',
         quote: 'When Haiti scored the second goal, the entire venue erupted.',
         paragraph: 'Hosted by Lakou at the Westside Motor Lounge, this event brought together Haitians and soccer fans alike to witness the historic return of Haiti to the World Cup.',
       },
       {
         type: 'imageDuo',
-        image1: 'story-lakoufet-3.jpg',
-        image2: 'story-lakoufet-4.jpg',
+        image1: 'lakou-fet-003.jpg',
+        image1Alt:'woman dancing in a crowd',
+        image2: 'lakou-fet-006.jpg',
+        image2Alt:'crowd waving flags and dancing',
         caption: 'A sea of blue and red. Flags waving. Music shaking the walls. Pride in every chant.',
       },
       {
         type: 'quoteImageText',
         quote: 'For one afternoon, Atlanta felt like Port-au-Prince.',
-        image: 'story-lakoufet-5.jpg',
+        image: 'lakou-fet-004.jpg',
+        imageAlt: 'singer on stage holding haitian flag',
         paragraphs: [
           'It was not only just a watch party. Lakou brought out the biggest names in Haitian music. Rich Cave, Eyo-e, 5Lan, Jperry and T-vice headlined the festival.',
           'Haitian DJs Unruley, Kash, Magic Kenny, Flockaland, and others kept the vibes going throughout the day.',
@@ -55,24 +58,25 @@ const stories = [
       },
       {
         type: 'imageHighlight',
-        image: 'story-lakoufet-6.jpg',
+        image: 'lakou-fet-005.jpg',
+        imageAlt: 'man screaming in excitement',
         highlight: 'The historic moment where Haiti scored for a 2nd time!',
         paragraph: 'Cheers. Tears. Strangers hugging like family. It wasn\u2019t just a goal \u2014 it was history.',
       },
     ],
 
     marquee: [
-      'story-lakoufet-g1.jpg',
-      'story-lakoufet-g2.jpg',
-      'story-lakoufet-g3.jpg',
-      'story-lakoufet-g4.jpg',
-      'story-lakoufet-g5.jpg',
-      'story-lakoufet-g6.jpg',
+      'lakou-fet-007.jpg',
+      'lakou-fet-008.jpg',
+      'lakou-fet-009.jpg',
+      'lakou-fet-010.jpg',
+      'lakou-fet-011.jpg',
+      'lakou-fet-012.jpg',
     ],
 
-    galleryUrl: 'https://drive.google.com/placeholder-lakoufet',
-    instagramHandle: 'lakou.atl',
-    instagramUrl: 'https://instagram.com/lakou.atl',
+    galleryUrl: 'https://drive.google.com/drive/folders/1ZoPEOFxlAivjZGJ483pMSetIMefDseDT?usp=sharing',
+    instagramHandle: 'lakoufet',
+    instagramUrl: 'https://www.instagram.com/lakoufet/',
   },
 
   // ════════════════════════════════════════════

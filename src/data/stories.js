@@ -16,12 +16,12 @@ const stories = [
     date: 'June 2026',
     title: 'Lakoufet World Cup Watch Party',
     excerpt: 'Haiti came to Atlanta for the World Cup and partied in the Lakou. A celebration of music, food, culture, and history.',
-    thumb: 'story-lakoufet.jpg',
+    thumb: 'story-thumb.jpg',
   },
   {
     id: 'tennis',
     slug: 'tennis-on-the-block',
-    status: 'live',
+    status: 'soon',
     tag: 'Event Coverage',
     date: 'June 2026',
     title: 'Tennis on the Block',
@@ -37,37 +37,7 @@ const stories = [
     title: 'Unplugged Ayiti',
     excerpt: 'An intimate evening where art, flavor, and culture come together under the stars.',
     thumb: 'story-unplugged-ayiti.jpg',
-  },
-  {
-    id: 'story-4',
-    slug: 'story-4',
-    status: 'soon',
-    tag: 'Event Coverage',
-    date: '2026',
-    title: 'Story Title',
-    excerpt: 'Short description goes here once this story is written.',
-    thumb: 'story-4.jpg',
-  },
-  {
-    id: 'story-5',
-    slug: 'story-5',
-    status: 'soon',
-    tag: 'Event Coverage',
-    date: '2026',
-    title: 'Story Title',
-    excerpt: 'Short description goes here once this story is written.',
-    thumb: 'story-5.jpg',
-  },
-  {
-    id: 'story-6',
-    slug: 'story-6',
-    status: 'soon',
-    tag: 'Event Coverage',
-    date: '2026',
-    title: 'Story Title',
-    excerpt: 'Short description goes here once this story is written.',
-    thumb: 'story-6.jpg',
-  },
+  }
 ]
 
 export default stories

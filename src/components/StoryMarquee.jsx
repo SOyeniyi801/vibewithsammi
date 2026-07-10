@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import '../styles/StoryMarquee.css'
 
-const imageModules = import.meta.glob('../../assets/images/*', { eager: true, import: 'default' })
+const imageModules = import.meta.glob('../assets/images/**/*', { eager: true, import: 'default' })
 function resolveImg(filename) {
   const match = Object.entries(imageModules).find(([path]) => path.endsWith('/' + filename))
   return match ? match[1] : null
@@ -16,21 +16,10 @@ function resolveImg(filename) {
  * Hovering pauses the scroll. Clicking an image opens the lightbox.
  */
 export default function StoryMarquee({ images = [] }) {
-  const trackRef = useRef(null)
   const [lbIndex, setLbIndex] = useState(null)
 
-  // Duplicate the track for seamless looping
-  useEffect(() => {
-    const track = trackRef.current
-    if (!track) return
-    const parent = track.parentElement
-    const existing = parent.querySelector('[data-marquee-clone]')
-    if (existing) existing.remove()
-    const clone = track.cloneNode(true)
-    clone.setAttribute('aria-hidden', 'true')
-    clone.setAttribute('data-marquee-clone', 'true')
-    parent.appendChild(clone)
-  }, [images])
+  // Render the list twice so translateX(-50%) loops seamlessly
+  const trackImages = [...images, ...images]
 
   const isOpen = lbIndex !== null
   const open  = (i) => setLbIndex(i)
@@ -58,16 +47,19 @@ export default function StoryMarquee({ images = [] }) {
     <>
       <div className="story-marquee" role="region" aria-label="Photo gallery from the event">
         <div className="story-marquee__row">
-          <div className="story-marquee__track" ref={trackRef}>
-            {images.map((filename, i) => {
+          <div className="story-marquee__track">
+            {trackImages.map((filename, i) => {
               const src = resolveImg(filename)
+              const isOriginal = i < images.length
               return (
                 <button
                   key={filename + i}
                   type="button"
                   className="story-marquee__item"
-                  onClick={() => open(i)}
-                  aria-label={`Open photo ${i + 1}`}
+                  onClick={() => open(i % images.length)}
+                  aria-label={`Open photo ${(i % images.length) + 1}`}
+                  aria-hidden={!isOriginal}
+                  tabIndex={isOriginal ? 0 : -1}
                 >
                   {src ? (
                     <img src={src} alt="" loading="lazy" />
