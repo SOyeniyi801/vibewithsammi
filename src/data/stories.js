@@ -19,13 +19,13 @@ const stories = [
     thumb: 'story-thumb.jpg',
   },
   {
-    id: 'tennis',
-    slug: 'tennis-on-the-block',
+    id: 'beltline-fest',
+    slug: 'atl-beltline-festival',
     status: 'soon',
     tag: 'Event Coverage',
     date: 'June 2026',
-    title: 'Tennis on the Block',
-    excerpt: 'Community tennis, great fits, and good energy on the courts of Atlanta.',
+    title: 'Atlanta Beltline Festival',
+    excerpt: 'Atlanta came out to celebrate the World Cup on the Beltline',
     thumb: 'story-tennis.jpg',
   },
   {

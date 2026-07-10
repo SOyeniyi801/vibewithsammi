@@ -81,16 +81,10 @@ export default function Home() {
               Hey, I'm<br /><span className="accent">Sammi.</span>
             </h2>
             <p>
-              I'm a Haitian-Nigerian event and festival photographer based in
-              Atlanta, originally from Brooklyn. I shoot with an editorial eye —
-              candid, alive, and true to the energy of the room.
+            I’m a Haitian-Nigerian photographer hailing from Brooklyn, New York, but currently living in Atlanta. I love capturing people in their element, the energy of a packed room, and all the little moments happening in between. My style is candid, colorful, and full of life. I want you to look back at a photo and remember exactly what it felt like to be there.
             </p>
             <p>
-              This past month I covered 8 events and delivered over 200
-              professionally edited images. Beyond the camera, I'm also a web
-              designer and developer through Floye Creative Co. — so I understand
-              how images live beyond the event, on social, in press, and in brand
-              campaigns.
+            Outside of photography, I’m also a web designer and developer through Floye Creative Co. That means I naturally think beyond just taking a good photo. I understand how images live across websites, social media, press, and campaigns, and I’m always thinking about how the photos I capture can keep working long after the event is over.
             </p>
             <div className="about__actions">
               <Link to="/work-with-me" className="btn btn-gold">Book a Shoot</Link>
@@ -170,7 +164,7 @@ export default function Home() {
             </p>
           </div>
           <Link to="/work-with-me" className="btn btn-ghost">
-            View My Offerings
+            Learn how to book
           </Link>
         </div>
       </section>
@@ -210,7 +204,7 @@ export default function Home() {
           </div>
 
           {/* Community Spotlight callout */}
-          <div className="spotlight-callout">
+          {/* <div className="spotlight-callout">
             <div className="spotlight-callout__text">
               <p className="spotlight-callout__label">Community Spotlight</p>
               <p>
@@ -220,7 +214,7 @@ export default function Home() {
             <Link to="/publication" className="btn btn-outline-dark">
               Read the Latest Spotlight
             </Link>
-          </div>
+          </div> */}
 
         </div>
       </section>
