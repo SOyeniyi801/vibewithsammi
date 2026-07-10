@@ -38,7 +38,7 @@ export default function Home() {
                 creative communities. Where culture shows up, the lens follows.
               </p>
               <div className="hero__actions">
-                <Link to="/work-with-me" className="btn btn-outline-dark">
+                <Link to="/services" className="btn btn-outline-dark">
                   Work With Me
                 </Link>
                 <Link to="/photography" className="btn btn-gold">

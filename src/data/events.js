@@ -23,6 +23,22 @@ const events = [
     thumb: 'event-unplugged-ayiti.jpg',
     driveUrl: 'https://drive.google.com/placeholder-unplugged-ayiti',
   },
+  {
+    id: 'beltline-festival',
+    title: 'Atlanta Beltline Festival',
+    subtitle: 'A World Cup celebration, honoring the opening of the new south Beltline path',
+    date: 'June 2026',
+    thumb: 'event-beltline-fest.jpg',
+    driveUrl: 'https://drive.google.com/placeholder-unplugged-ayiti',
+  },
+  {
+    id: 'deyo-watch-party',
+    title: 'Deyo Haiti x Brazil Watch Party',
+    subtitle: 'A World Cup celebration, honoring the opening of the new south Beltline path',
+    date: 'June 2026',
+    thumb: 'event-deyo-watch-party.jpg',
+    driveUrl: 'https://drive.google.com/placeholder-unplugged-ayiti',
+  },
 ]
 
 export default events
