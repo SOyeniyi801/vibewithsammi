@@ -7,6 +7,15 @@
  */
 
 const events = [
+
+  {
+    id: 'rum-island-fest',
+    title: 'Rum Island Festival',
+    subtitle: 'More than just a festival. Lakoufet was a day of music, food, and culture celebrating Haiti\u2019s historic return to the World Cup.',
+    date: 'July 2026',
+    thumb: 'event-rum-island-fest.jpg',
+    driveUrl: 'https://drive.google.com/drive/folders/1IHpB2PTDmcZInO43hZPKOXlXIeoYxk12?usp=sharing',
+  },
   {
     id: 'lakoufet',
     title: 'Lakoufet',
