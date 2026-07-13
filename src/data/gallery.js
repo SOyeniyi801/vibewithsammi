@@ -17,8 +17,8 @@ const gallery = [
     type: 'image',
     shape: 'portrait',
     src: 'gallery-1.jpg',
-    caption: 'Candid moment from the crowd',
-    event: 'Lakoufet World Cup Watch Party',
+    caption: '',
+    event: 'Beats on the Belt',
   },
   {
     id: 'g2',
@@ -26,7 +26,7 @@ const gallery = [
     shape: 'portrait',
     src: 'gallery-2.jpg',
     caption: '',
-    event: 'Tennis on the Block',
+    event: 'Beltline fest',
   },
   {
     id: 'g3',
@@ -34,15 +34,15 @@ const gallery = [
     shape: 'square',
     src: 'gallery-3.jpg',
     caption: '',
-    event: 'Controllerise 6.1',
+    event: 'Tennis on the block',
   },
   {
     id: 'g4',
     type: 'image',
     shape: 'landscape',
     src: 'gallery-4.jpg',
-    caption: 'Festival energy',
-    event: 'Lakoufet World Cup Watch Party',
+    caption: '',
+    event: 'Private Party',
   },
   {
     id: 'g5',
@@ -50,7 +50,7 @@ const gallery = [
     shape: 'landscape',
     src: 'gallery-5.jpg',
     caption: '',
-    event: '',
+    event: 'Private Party',
   },
   {
     id: 'g6',
@@ -67,7 +67,7 @@ const gallery = [
     shape: 'portrait',
     src: 'gallery-7.jpg',
     caption: '',
-    event: '',
+    event: 'Chef Showdown',
   },
   {
     id: 'g8',
@@ -75,7 +75,7 @@ const gallery = [
     shape: 'square',
     src: 'gallery-8.jpg',
     caption: '',
-    event: 'Tennis on the Block',
+    event: 'Lakoufet',
   },
   {
     id: 'g9',
@@ -83,7 +83,7 @@ const gallery = [
     shape: 'portrait',
     src: 'gallery-9.jpg',
     caption: '',
-    event: '',
+    event: 'Ayiti Unplugged',
   },
   {
     id: 'g10',
@@ -117,6 +117,30 @@ const gallery = [
     src: 'gallery-13.jpg',
     caption: '',
     event: '',
+  },
+  {
+    id: 'g14',
+    type: 'image',
+    shape: 'portrait',
+    src: 'gallery-14.jpg',
+    caption: '',
+    event: 'Rum Island Festival',
+  },
+  {
+    id: 'g15',
+    type: 'image',
+    shape: 'portrait',
+    src: 'gallery-15.jpg',
+    caption: '',
+    event: 'Rum Island Festival',
+  },
+  {
+    id: 'g16',
+    type: 'image',
+    shape: 'portrait',
+    src: 'gallery-16.jpg',
+    caption: '',
+    event: 'Rum Island Festival',
   }
 ]
 
