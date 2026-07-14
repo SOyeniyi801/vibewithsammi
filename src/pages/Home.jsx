@@ -189,9 +189,9 @@ export default function Home() {
               </div>
             </Link>
 
-            <Link to="/publication/lakoufet" className="story-card">
+            <Link to="/publication/beltline-fest" className="story-card">
               <div className="story-card__thumb">
-                <img src={storyImg2} alt="Lakoufet World Cup Watch Party" loading="lazy" />
+                <img src={storyImg2} alt="Atlanta Beltline Fest" loading="lazy" />
               </div>
               <div className="story-card__body">
                 <p className="story-card__title">Atlanta Beltline Festival</p>

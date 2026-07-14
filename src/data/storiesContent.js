@@ -80,15 +80,15 @@ const stories = [
   },
 
   // ════════════════════════════════════════════
-  // STORY 2 — Tennis on the Block
+  // STORY 2 — Atlanta Beltline Fest
   // ════════════════════════════════════════════
   {
-    slug: 'tennis-on-the-block',
+    slug: 'beltline-fest',
     tag: 'Event',
-    title: 'Tennis on the Block',
+    title: 'Atlanta Beltline Fest',
     kicker: 'Behind the lens',
-    intro: 'Replace with your intro paragraph for this story.',
-    heroImage: 'story-tennis-hero.jpg',
+    intro: 'Atlanta Beltline Fest transformed Pittsburgh Yards into a global celebration of culture, community, and connection. Over two days, thousands gathered to watch World Cup matches, explore international cuisine, experience performances from around the world, and celebrate the opening of Pittsburgh Yards newest Beltline connection.',
+    heroImage: 'beltline-fest-001.jpg',
 
     photography: 'Sammi Oyeniyi',
     location: 'Atlanta, GA',
@@ -98,41 +98,42 @@ const stories = [
     blocks: [
       {
         type: 'imagePairQuote',
-        image1: 'story-tennis-1.jpg',
-        image2: 'story-tennis-2.jpg',
-        quote: 'Replace with your pull quote.',
-        paragraph: 'Replace with your paragraph.',
+        image1: 'beltline-fest-003.jpg',
+        image2: 'beltline-fest-002.jpg',
+        quote: 'We wanted to make sure the World Cup happened with Atlanta, not to Atlanta.',
+        paragraph: "Atlanta Beltline Fest embodied that vision. Rather than centering the tournament inside the stadium alone, the festival extended the World Cup into Atlanta's neighborhoods—bringing together music, food, culture, and community at Pittsburgh Yards while celebrating the opening of its newest Beltline connection.",
       },
       {
         type: 'imageDuo',
-        image1: 'story-tennis-3.jpg',
-        image2: 'story-tennis-4.jpg',
-        caption: 'Replace with your caption.',
+        image1: 'beltline-fest-002.jpg',
+        image2: 'beltline-fest-005.jpg',
+        caption: 'A weekend where every path led to music, food, and community.',
       },
       {
         type: 'quoteImageText',
-        quote: 'Replace with your second pull quote.',
-        image: 'story-tennis-5.jpg',
-        paragraphs: ['Replace with your paragraph(s).'],
+        quote: 'The evening moved to its own rhythm.',
+        image: 'beltline-fest-004.jpg',
+        paragraphs: ['DJ UnRuely and Canterbury Tales set the tone with their signature mashup styles, blending familiar classics with fresh, unexpected spins. The result was pure Atlanta: people from every walk of life dancing together, caught somewhere between nostalgia, rhythm, and discovery.'],
       },
       {
         type: 'imageHighlight',
-        image: 'story-tennis-6.jpg',
-        highlight: 'Replace with your highlight line.',
-        paragraph: 'Replace with your closing paragraph.',
+        image: 'beltline-fest-013.jpg',
+        highlight: 'Then Busta Rhymes took the stage.',
+        paragraph: "The energy reached another level when Busta Rhymes and Spliff Star hit the stage. For a moment, it felt like Atlanta had been transported back to the golden era of hip-hop. Together, they took the crowd on a journey through decades of music, with every song unlocking memories tied to a different chapter of life. Busta made sure to show love to our hometown of Brooklyn, New York, even shouting out the Knicks' championship run, drawing a roar from the New Yorkers in the crowd. And when it came time for his signature rapid-fire delivery, he didn't miss a beat, proving why he's remained one of hip-hop's most electrifying performers.",
       },
     ],
 
     marquee: [
-      'story-tennis-g1.jpg',
-      'story-tennis-g2.jpg',
-      'story-tennis-g3.jpg',
-      'story-tennis-g4.jpg',
-      'story-tennis-g5.jpg',
-      'story-tennis-g6.jpg',
+      'beltline-fest-006.jpg',
+      'beltline-fest-007.jpg',
+      'beltline-fest-008.jpg',
+      'beltline-fest-009.jpg',
+      'beltline-fest-010.jpg',
+      'beltline-fest-011.jpg',
+      'beltline-fest-012.jpg'
     ],
 
-    galleryUrl: 'https://drive.google.com/placeholder-tennis',
+    galleryUrl: 'https://drive.google.com/drive/folders/1ZfTpUamw9xWUd0rKk-GxTnKibHkvgLP3?usp=drive_link',
     instagramHandle: '',
     instagramUrl: '',
   },

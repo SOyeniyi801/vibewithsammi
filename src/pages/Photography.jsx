@@ -24,7 +24,7 @@ export default function Photography() {
       {/* ══ GALLERY ═════════════════════════════════ */}
       <section className="photo-gallery">
         <div className="container">
-          <GalleryGrid items={galleryItems} />
+          <GalleryGrid items={galleryItems}/>
         </div>
       </section>
 

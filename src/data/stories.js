@@ -20,8 +20,8 @@ const stories = [
   },
   {
     id: 'beltline-fest',
-    slug: 'atl-beltline-festival',
-    status: 'soon',
+    slug: 'beltline-fest',
+    status: 'live',
     tag: 'Event Coverage',
     date: 'June 2026',
     title: 'Atlanta Beltline Festival',

@@ -26,7 +26,7 @@ const gallery = [
     shape: 'portrait',
     src: 'gallery-2.jpg',
     caption: '',
-    event: 'Beltline fest',
+    event: 'Atlanta Beltline Fest',
   },
   {
     id: 'g3',
@@ -75,7 +75,7 @@ const gallery = [
     shape: 'square',
     src: 'gallery-8.jpg',
     caption: '',
-    event: 'Lakoufet',
+    event: 'Lakoufet World Cup Watch Party',
   },
   {
     id: 'g9',
@@ -91,7 +91,7 @@ const gallery = [
     shape: 'landscape',
     src: 'gallery-10.jpg',
     caption: '',
-    event: '',
+    event: 'Tennis on the block',
   },
   {
     id: 'g11',
@@ -108,7 +108,7 @@ const gallery = [
     shape: 'portrait',
     src: 'gallery-12.jpg',
     caption: '',
-    event: '',
+    event: 'Ayiti Unplugged',
   },
   {
     id: 'g13',
@@ -116,7 +116,7 @@ const gallery = [
     shape: 'portrait',
     src: 'gallery-13.jpg',
     caption: '',
-    event: '',
+    event: 'Private - Wedding',
   },
   {
     id: 'g14',
