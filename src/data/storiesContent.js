@@ -15,7 +15,71 @@
 const stories = [
 
   // ════════════════════════════════════════════
-  // STORY 1 — Lakoufet
+  // STORY 1 — Rum Island Festival
+  // ════════════════════════════════════════════
+  {
+    slug: 'rum-island-fest',
+    tag: 'Event',
+    title: 'Rum Island Festival',
+    kicker: 'Behind the lens',
+    intro: "Based in Atlanta's Piedmont Park, Rum Island Festival transformed the promenade into a Caribbean music festival for the night. This immersive cultural experience had it all: food, music, drinks, culture, and fun. The bass of the drums could be felt as you came down the stairs into the grass field, where hundreds of West Indians were jumping and waving to the vibes. Food trucks and vendors lined the perimeter of the park, making sure attendees had everything they needed for the all-day festivities.",
+    heroImage: 'rum-island-fest-011.jpg',
+
+    photography: 'Sammi Oyeniyi',
+    location: 'Atlanta, GA',
+    date: 'July 11, 2026',
+    category: 'Culture \u00b7 Event',
+
+    blocks: [
+      {
+        type: 'imagePairQuote',
+        image1: 'rum-island-fest-007.jpg',
+        image1Alt: 'women dancing in a crowd',
+        quote: 'Built on the ethos "Culture. Community. Rum.", Rum Island Festival is more than a music event.',
+        paragraph: "This was Rum Island Festival's first-ever event, and I'm sure it won't be its last. The festival started with DJ sets from renowned DJs like Ricky Platinum, Yung Rage, Propa English, Unique Soundz, Boogy Ranks, DJ Fabb, and more. From early, the vibes were set despite the rainstorm that was wrecking havoc earlier in the day.",
+      },
+      {
+        type: 'imageDuo',
+        image1: 'rum-island-fest-003.jpg',
+        image1Alt:'Denise Belfon performing on stage',
+        image2: 'rum-island-fest-009.jpg',
+        image2Alt:'woman dancing in the crowd',
+        caption: 'Everyone was dancing, the culture was alive',
+      },
+      {
+        type: 'quoteImageText',
+        highlight: 'From DJs setting the tone to artists commanding the stage, the energy never let up.',
+        image: 'rum-island-fest-012.jpg',
+        imageAlt: 'singer on stage holding haitian flag',
+        paragraphs: [
+          "Pretty Vee took the stage as the festival transformed into a concert, showing us that you can still split in Prada boots.", "Superstars like Trinidad's own Denise Belfon took the stage to remind the ladies who the whining specialist was, and to always look out for your fellow woman.", "Jamaican-Haitian artist Aytian performed hits like Tip and Wah Yo Deh Pan, sending the crowd into a frenzy. He even invited girls from the audience on stage to show who could get down the baddest. And the gyal dem got down bad."
+        ],
+      },
+      {
+        type: 'imageHighlight',
+        image: 'rum-island-fest-006.jpg',
+        imageAlt: 'man screaming in excitement',
+        highlight: 'As the night came to a close, one thing was clear: Atlanta showed up for Caribbean culture.',
+        paragraphs: ['The night ended with Jamaican superstar Aidonia shutting down the house. The entire promenade was full of attendees waving their flags in the air as he performed a number of his biggest hits across the years.', 'Overall, Rum Island Festival embodied its principles: Culture. Community. Rum. A portion of the proceeds benefited their partnership with Her Village Inc., a 501(c)(3) nonprofit organization dedicated to supporting families experiencing poverty.']
+      },
+    ],
+
+    marquee: [
+      'rum-island-fest-002.jpg',
+      'rum-island-fest-004.jpg',
+      'rum-island-fest-005.jpg',
+      'rum-island-fest-001.jpg',
+      'rum-island-fest-007.jpg',
+      'rum-island-fest-008.jpg',
+    ],
+
+    galleryUrl: 'https://drive.google.com/drive/folders/1IHpB2PTDmcZInO43hZPKOXlXIeoYxk12?usp=drive_link',
+    instagramHandle: 'rumislandfest',
+    instagramUrl: 'https://www.instagram.com/rumislandfest/',
+  },
+
+  // ════════════════════════════════════════════
+  // STORY 2 — Lakoufet
   // ════════════════════════════════════════════
   {
     slug: 'lakoufet',
@@ -48,7 +112,7 @@ const stories = [
       },
       {
         type: 'quoteImageText',
-        quote: 'For one afternoon, Atlanta felt like Port-au-Prince.',
+        highlight: 'For one afternoon, Atlanta felt like Port-au-Prince.',
         image: 'lakou-fet-004.jpg',
         imageAlt: 'singer on stage holding haitian flag',
         paragraphs: [
@@ -61,7 +125,7 @@ const stories = [
         image: 'lakou-fet-005.jpg',
         imageAlt: 'man screaming in excitement',
         highlight: 'The historic moment where Haiti scored for a 2nd time!',
-        paragraph: 'Cheers. Tears. Strangers hugging like family. It wasn\u2019t just a goal \u2014 it was history.',
+        paragraphs: ['Cheers. Tears. Strangers hugging like family. It wasn\u2019t just a goal \u2014 it was history.']
       },
     ],
 
@@ -80,7 +144,7 @@ const stories = [
   },
 
   // ════════════════════════════════════════════
-  // STORY 2 — Atlanta Beltline Fest
+  // STORY 3 — Atlanta Beltline Fest
   // ════════════════════════════════════════════
   {
     slug: 'beltline-fest',
@@ -111,7 +175,7 @@ const stories = [
       },
       {
         type: 'quoteImageText',
-        quote: 'The evening moved to its own rhythm.',
+        highlight: 'The evening moved to its own rhythm.',
         image: 'beltline-fest-004.jpg',
         paragraphs: ['DJ UnRuely and Canterbury Tales set the tone with their signature mashup styles, blending familiar classics with fresh, unexpected spins. The result was pure Atlanta: people from every walk of life dancing together, caught somewhere between nostalgia, rhythm, and discovery.'],
       },
@@ -119,7 +183,7 @@ const stories = [
         type: 'imageHighlight',
         image: 'beltline-fest-013.jpg',
         highlight: 'Then Busta Rhymes took the stage.',
-        paragraph: "The energy reached another level when Busta Rhymes and Spliff Star hit the stage. For a moment, it felt like Atlanta had been transported back to the golden era of hip-hop. Together, they took the crowd on a journey through decades of music, with every song unlocking memories tied to a different chapter of life. Busta made sure to show love to our hometown of Brooklyn, New York, even shouting out the Knicks' championship run, drawing a roar from the New Yorkers in the crowd. And when it came time for his signature rapid-fire delivery, he didn't miss a beat, proving why he's remained one of hip-hop's most electrifying performers.",
+        paragraphs: ["The energy reached another level when Busta Rhymes and Spliff Star hit the stage. For a moment, it felt like Atlanta had been transported back to the golden era of hip-hop. Together, they took the crowd on a journey through decades of music, with every song unlocking memories tied to a different chapter of life.", "Busta made sure to show love to our hometown of Brooklyn, New York, even shouting out the Knicks' championship run, drawing a roar from the New Yorkers in the crowd. And when it came time for his signature rapid-fire delivery, he didn't miss a beat, proving why he's remained one of hip-hop's most electrifying performers."],
       },
     ],
 
@@ -139,7 +203,7 @@ const stories = [
   },
 
   // ════════════════════════════════════════════
-  // STORY 3 — Unplugged Ayiti
+  // STORY 4 — Unplugged Ayiti
   // ════════════════════════════════════════════
   {
     slug: 'unplugged-ayiti',

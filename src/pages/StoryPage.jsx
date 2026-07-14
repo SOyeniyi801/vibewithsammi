@@ -58,7 +58,7 @@ function renderBlock(block, i) {
       return (
         <div className="s-block-3" key={i}>
           <div className="s-block-3-quote">
-            <p className="s-quote" style={{ fontSize: 'clamp(20px, 2.5vw, 28px)' }}>{block.quote}</p>
+          <p className="s-highlight-heading">{block.highlight}</p>
             <div className="s-quote-divider" />
           </div>
           <StoryImage filename={block.image} alt={block.imageAlt}/>
@@ -79,7 +79,13 @@ function renderBlock(block, i) {
           <div>
             <p className="s-highlight-heading">{block.highlight}</p>
             <div className="s-quote-divider" style={{ marginBottom: 20 }} />
-            <p className="s-body-text">{block.paragraph}</p>
+            <div>
+            {block.paragraphs?.map((p, idx) => (
+              <p className="s-body-text" key={idx} style={idx > 0 ? { marginTop: 16 } : undefined}>
+                {p}
+              </p>
+            ))}
+          </div>
           </div>
         </div>
       )

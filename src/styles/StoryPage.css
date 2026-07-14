@@ -65,7 +65,7 @@
 }
 
 .story-hero-sub {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--muted);
   max-width: 420px;
   line-height: 1.85;
@@ -116,7 +116,7 @@
 }
 
 .story-meta-item p {
-  font-size: 13px;
+  font-size: 16px;
   color: var(--slate);
 }
 
@@ -213,7 +213,7 @@
 .s-two-col .s-img:last-child { max-width: 280px; }
 
 .s-caption {
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
   color: var(--muted);
   text-align: center;
