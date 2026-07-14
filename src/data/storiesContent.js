@@ -52,7 +52,7 @@ const stories = [
         image: 'rum-island-fest-012.jpg',
         imageAlt: 'singer on stage holding haitian flag',
         paragraphs: [
-          "Pretty Vee took the stage as the festival transformed into a concert, showing us that you can still split in Prada boots.", "Superstars like Trinidad's own Denise Belfon took the stage to remind the ladies who the whining specialist was, and to always look out for your fellow woman.", "Jamaican-Haitian artist Aytian performed hits like Tip and Wah Yo Deh Pan, sending the crowd into a frenzy. He even invited girls from the audience on stage to show who could get down the baddest. And the gyal dem got down bad."
+          "Pretty Vee took the stage as the festival transformed into a concert, showing us that you can still split in Prada boots.", "Superstars like Trinidad's own Denise Belfon took the stage to remind the ladies who the whining specialist was, and to always look out for your fellow woman.", "Jamaican-Haitian artist Ayetian performed hits like Tip and Wah Yo Deh Pan, sending the crowd into a frenzy. He even invited girls from the audience on stage to show who could get down the baddest. And the gyal dem got down bad."
         ],
       },
       {
