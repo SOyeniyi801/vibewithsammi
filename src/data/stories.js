@@ -13,7 +13,7 @@ const stories = [
     slug: 'rum-island-fest',
     status: 'live',
     tag: 'Event Coverage',
-    date: 'June 2026',
+    date: 'July 2026',
     title: 'Rum Island Festival',
     excerpt: 'West Indians across Atlanta came together to party in Piedmont Park at the 1st ever Rum Island Festival, with live performances from some of the caribbeans biggest Artists',
     thumb: 'rum-island-fest-001.jpg',
