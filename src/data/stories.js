@@ -26,7 +26,7 @@ const stories = [
     date: 'June 2026',
     title: 'Atlanta Beltline Festival',
     excerpt: 'Atlanta came out to celebrate the World Cup on the Beltline',
-    thumb: 'story-tennis.jpg',
+    thumb: 'beltline-fest-013.jpg',
   },
   {
     id: 'unplugged-ayiti',
